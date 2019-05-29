@@ -25,8 +25,28 @@ export default class Order extends Component {
     
   render() {
 
-    return (
-<div>
+    return (<div >
+      <div class="row">
+        <div class="col-md-6">
+                <form class="form-area" onSubmit={this.createOrder} >
+                  <h3>Creat your Order</h3>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="itemprice" placeholder="itemPrice"/>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="itemdesc" placeholder="itenDesc"/>
+                  </div>
+                  <div class="form-group">
+                    <input type="url" class="form-control" id="itemimage" placeholder="itemImage"/>
+                  </div>
+                  <button id="submit" name="singlebutton" class="btn btn-primary"onClick={this.createOrder}>OK</button>
+                 
+                </form>
+              </div>
+              
+                    
+                  </div>
+             
  
       <ul>
           {this.props.items.map(item=>{
@@ -43,34 +63,15 @@ export default class Order extends Component {
         
       </ul>
               
-      <div class="container">
-	<div class="row">
-		<div class="col-md-6">
-            <form class="form-area" onSubmit={this.createOrder} >
-              <h3>Creat your Order</h3>
-              <div class="form-group">
-                <input type="text" class="form-control" id="itemprice" placeholder="itemPrice"/>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="itemdesc" placeholder="itenDesc"/>
-              </div>
-              <div class="form-group">
-                <input type="url" class="form-control" id="itemimage" placeholder="itemImage"/>
-              </div>
-              <button id="submit" name="singlebutton" class="btn btn-primary"onClick={this.createOrder}>OK</button>
-             
-            </form>
-          </div>
-          
-                
-              </div>
-          </div>
+     
 
         
 
 <aside className="profile-card"><h1 class="n">Your order total price :</h1>
 <h2 class="Tprice">{this.props.totalPrice} </h2>
 </aside>
+
+
 
 </div>
 

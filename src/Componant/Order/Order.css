@@ -1,50 +1,4 @@
-/* .form-area {
-    max-width: 342px;
-    margin: 0 auto;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    padding: 44px 28px 36px;
-    background-color: #fff;
-    border-radius: 4px;
-  }
-  .form-area h3 {
-    color: #2874a6;
-    line-height: 1.3;
-    font-size: 22px;
-    margin-bottom: 14px;
-    font-family: 'Poppins', sans-serif;
-  }
-  .form-area .btn {
-    margin-top: 0px;
-    padding: 8px 26px !important;
-    font-size: 14px;
-    color:#fff !important;
-  }
-  .form-group .form-control:focus {
-    outline: none;
-    box-shadow: none;
-    background: #fff;
-    border-color: #255a06;
-  }
-  .form-control {
-    padding: 12px 20px;
-    height: 38px;
-    border-radius: 0px;
-  }
-  .form-group {
-    margin-bottom: 10px;
-  }
-  .btn-primary {
-    padding: 8px 36px;
-    border-radius: 50px;
-    font-size: 16px;
-    background-color: #36aa53e1;
-    border-color: transparent;
-    margin-top: 15px;
-  }
-  .btn-primary:hover {
-    background-color: #99d494;
-    border-color: transparent;
-  } */
+
   .profile-card {
     background: #FFB300;
     width: 56px;
@@ -55,7 +9,8 @@
     z-index: 2;
     overflow: hidden;
     opacity: 0;
-    margin-top: 70px;
+    margin-bottom: 200px;
+    margin-left: 440px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-border-radius: 50%;
@@ -78,9 +33,13 @@
     100% {
       width: 56px;
       height: 56px;
-      margin-top: 0px;
+      margin-top:80px;
       opacity: 1;
     }
+  }
+
+  .pex1 {
+    margin-left: 100px;
   }
   
   @keyframes moveDown {
@@ -117,18 +76,21 @@
       border-radius: 4px;
     }
     100% {
-      width: 440px;
-      height: 280px;
-      background: #FFFFFF;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.836);
       border-radius: 4px;
+      margin-left: 2px;
+    
     }
   }
   .form-area {
     max-width: 342px;
     margin: 0 auto;
+    margin-left: 80px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding: 44px 28px 36px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.603);
     border-radius: 4px;
   }
   .form-area h3 {
