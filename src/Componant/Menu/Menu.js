@@ -12,7 +12,7 @@ export default class Menu extends Component {
          this.setState({
              items: response.data
          })
-         console.log('redponse',response)
+         console.log('response',response)
      })
      .catch(error=>{
          console.log('error', error)

@@ -10,15 +10,14 @@ export default class Order extends Component {
 
     createOrder = ()=>{
         const data={
-          "itemDesc":document.getElementById('itemDesc').Value,
-           "itemPrice":document.getElementById('totalPrice').Value,
-           "itemImage":document.getElementById('itemImage').Value,
+          "itemDesc":document.getElementById('itemDesc').value,
+           "itemPrice":document.getElementById('totalPrice').value,
+           "itemImage":document.getElementById('itemImage').value,
       
           };
         axios.post('http://94.127.209.194:3333/AudioGramServices/webapi/myresource/postmenu', data)
         .then(response=>{
             
-            this.props.clearOrder()
          console.log(response)  
          })
     }
